@@ -6,6 +6,9 @@ const assets = {
 		banner4: require("./images/banner4.jpg"),
 		logo: require("./images/logo.jpg"),
 		delivery: require("./images/deliveryicon.png"),
+		quality: require("./images/quality.png"),
+		since: require("./images/since.png"),
+		customize: require("./images/customize.png"),
 	},
 };
 export default assets;

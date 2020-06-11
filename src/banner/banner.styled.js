@@ -56,14 +56,13 @@ export const Box1 = styled.div`
 export const Box2 = styled.div`
 			display: flex;
 			wrap: nowrap;
-			flex-direction:row;
+			flex-direction: row;
 			width: 97%;
 			height: 100px;
-			background: #fcfcfa;
+			background: #F3F3F3;
 			position: overflow;
-            border:1px grey solid;
+			border: 1px grey solid;
 			margin: 0px 20px 0px 20px;
-
 
 			@media screen and (min-width: 1200px) {
 				display: flex;
@@ -81,13 +80,13 @@ export const Box2 = styled.div`
 			}
 
 			@media (min-width: 676px) and (max-width: 872px) {
-				width:94%;
+				width: 94%;
 				display: flex;
 				right: 25px;
 				top: 15px;
 				transform: translateY(-50%);
 			}
-			
+
 			@media (min-width: 455px) and (max-width: 675px) {
 				width: 94%;
 				display: flex;
@@ -105,12 +104,45 @@ export const Box2 = styled.div`
 			}
 		`;
 export const Subbanner1=styled.div`
-
+padding-top:30px ;
 width:25%;
-height:98%;
-background-color:black;
+height:100%;
+border-right: 1px solid grey;
 
+// 
+h5{
+	color:brown;
+}
 `;
+export const Subbanner2 = styled.div`
+			padding-top: 30px;
+			width: 25%;
+			height: 100%;
+			border-right: 1px solid grey;
+
+			h5 {
+				color: brown;
+			}
+		`;
+export const Subbanner3 = styled.div`
+			padding-top: 30px;
+			width: 25%;
+			height: 100%;
+			border-right: 1px solid grey;
+
+			h5 {
+				color: brown;
+			}
+		`;
+export const Subbanner4 = styled.div`
+			padding-top: 30px;
+			width: 25%;
+			height: 100%;
+
+			h5 {
+				color: brown;
+			}
+		`;
 
 
 export const BannerImage = styled.img`

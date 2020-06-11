@@ -1,5 +1,5 @@
 import React, {useState } from "react";
-import { Container, Box1, Box2, BannerImage,Subbanner1 } from "./banner.styled";
+import { Container, Box1, Box2, BannerImage, Subbanner1, Subbanner2, Subbanner3, Subbanner4 } from "./banner.styled";
 import assets from "./../assets/";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,10 +33,22 @@ export default function Banner() {
 				</Carousel>
 			</Box1>
 			<Box2>
-				<Subbanner1><img src={assets.images.delivery} alt=""/></Subbanner1>
-				{/* <Subdiv1></Subdiv1>
-				<Subdiv1></Subdiv1>
-				<Subdiv1></Subdiv1> */}
+				<Subbanner1>
+					<img src={assets.images.delivery} alt="" />
+					<h5>Free Delivery</h5>
+				</Subbanner1>
+				<Subbanner2>
+					<img src={assets.images.quality} alt="" />
+					<h5>Assured Quality</h5>
+				</Subbanner2>
+				<Subbanner3>
+					<img src={assets.images.since} alt="" />
+					<h5>Since 1976</h5>
+				</Subbanner3>
+				<Subbanner4>
+					<img src={assets.images.customize} alt="" />
+					<h5>Customized Products</h5>
+				</Subbanner4>
 			</Box2>
 		</Container>
 	);
