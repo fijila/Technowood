@@ -95,10 +95,10 @@ export const Box2 = styled.div`
 				transform: translateY(-50%);
 			}
 			@media screen and (max-width: 454px) {
-				width: 90%;
+				width: 93%;
 
 				display: flex;
-				right: 25px;
+				right: 10px;
 				top: 15px;
 				transform: translateY(-50%);
 			}
@@ -109,8 +109,8 @@ width:25%;
 height:100%;
 border-right: 1px solid grey;
 
-// 
-h5{
+
+h6{
 	color:brown;
 }
 `;
@@ -120,7 +120,7 @@ export const Subbanner2 = styled.div`
 			height: 100%;
 			border-right: 1px solid grey;
 
-			h5 {
+		h6 {
 				color: brown;
 			}
 		`;
@@ -130,7 +130,7 @@ export const Subbanner3 = styled.div`
 			height: 100%;
 			border-right: 1px solid grey;
 
-			h5 {
+			h6 {
 				color: brown;
 			}
 		`;
@@ -139,7 +139,7 @@ export const Subbanner4 = styled.div`
 			width: 25%;
 			height: 100%;
 
-			h5 {
+			h6 {
 				color: brown;
 			}
 		`;

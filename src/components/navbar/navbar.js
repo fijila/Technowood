@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { MainNav, Button, Link, Search,Input, SubLink1, SubLink2, SubLink3, SubLink4,Img } from "./navbar.styled";
+import { MainNav,Button, Link, Search,Input, SubLink1, SubLink2, SubLink3, SubLink4,Img } from "./navbar.styled";
 import axios from "axios";
-import assets from "../assets";
+import assets from "../../assets";
+
 
 
 export default function Navbar() {
@@ -33,9 +34,12 @@ export default function Navbar() {
 		<div>
 			<MainNav>
 				<Search>
-					<Img src={assets.images.logo} alt=""/>
+					<a href="/">
+						<Img src={assets.images.logo} alt="" title="logo" />
+					</a>
 					<Input type="text" name="text" placeholder="Search here!" onChange={(e) => handleOnchange(e)} />
 					<Button onClick={(e) => handleSubmit(e)}>Search</Button>
+
 					{showSearch && (
 						<div>
 							{serachResult.map((item) => (
@@ -49,16 +53,24 @@ export default function Navbar() {
 				</Search>
 				<Link>
 					<SubLink1>
-						<a>Furniture</a>
+						<a href="./furniture" alt="">
+							Furniture
+						</a>
 					</SubLink1>
 					<SubLink2>
-						<a>Sofas</a>
+						<a href="./tile" alt="">
+							Tiles
+						</a>
 					</SubLink2>
 					<SubLink3>
-						<a>Dinning</a>
+						<a href="./clock" alt="">
+							Clocks
+						</a>
 					</SubLink3>
 					<SubLink4>
-						<a>Bedroom</a>
+						<a href="./light" alt="">
+							Lights
+						</a>
 					</SubLink4>
 				</Link>
 			</MainNav>

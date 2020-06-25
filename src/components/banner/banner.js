@@ -1,6 +1,6 @@
 import React, {useState } from "react";
 import { Container, Box1, Box2, BannerImage, Subbanner1, Subbanner2, Subbanner3, Subbanner4 } from "./banner.styled";
-import assets from "./../assets/";
+import assets from "../../assets";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,13 +19,13 @@ export default function Banner() {
 			<Box1>
 				<Carousel activeIndex={index} onSelect={handleSelect}>
 					<Carousel.Item>
-						<BannerImage src={assets.images.banner1} alt="" />
-					</Carousel.Item>
-					<Carousel.Item>
 						<BannerImage src={assets.images.banner2} alt="" />
 					</Carousel.Item>
 					<Carousel.Item>
 						<BannerImage src={assets.images.banner3} alt="" />
+					</Carousel.Item>
+					<Carousel.Item>
+						<BannerImage src={assets.images.banner1} alt="" />
 					</Carousel.Item>
 					<Carousel.Item>
 						<BannerImage src={assets.images.banner4} alt="" />
@@ -35,19 +35,19 @@ export default function Banner() {
 			<Box2>
 				<Subbanner1>
 					<img src={assets.images.delivery} alt="" />
-					<h5>Free Delivery</h5>
+					<h6>Free Delivery</h6>
 				</Subbanner1>
 				<Subbanner2>
 					<img src={assets.images.quality} alt="" />
-					<h5>Assured Quality</h5>
+					<h6>Assured Quality</h6>
 				</Subbanner2>
 				<Subbanner3>
 					<img src={assets.images.since} alt="" />
-					<h5>Since 1976</h5>
+					<h6>Since 1976</h6>
 				</Subbanner3>
 				<Subbanner4>
 					<img src={assets.images.customize} alt="" />
-					<h5>Customized Products</h5>
+					<h6>Customized Products</h6>
 				</Subbanner4>
 			</Box2>
 		</Container>

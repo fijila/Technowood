@@ -9,6 +9,17 @@ const assets = {
 		quality: require("./images/quality.png"),
 		since: require("./images/since.png"),
 		customize: require("./images/customize.png"),
+		slider1: require("./images/slider1.jpg"),
+		slider2: require("./images/slider2.jpg"),
+		slider3: require("./images/slider3.jpg"),
+		slider4: require("./images/slider4.jpg"),
+		slider5: require("./images/slider5.jpg"),
+		slider6: require("./images/slider6.jpg"),
+		slider7: require("./images/slider7.jpg"),
+		slider8: require("./images/slider8.jpg"),
+		slider9: require("./images/slider9.jpg"),
+		slider10: require("./images/slider10.jpg"),
+		galleryimage: require("./images/galleryimg.jpg"),
 	},
 };
 export default assets;

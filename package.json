@@ -10,6 +10,7 @@
     "axios": "^0.19.2",
     "axios-hooks": "^1.10.0",
     "bootstrap": "^4.5.0",
+    "file-loader": "^6.0.0",
     "formik": "^2.1.4",
     "pure-react-carousel": "^1.27.1",
     "react": "^16.13.1",
@@ -17,10 +18,14 @@
     "react-dom": "^16.13.1",
     "react-hook-carousel": "0.0.3",
     "react-hook-form": "^5.7.2",
+    "react-id-swiper": "^3.0.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-slick": "^0.26.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.1.0",
+    "swiper": "^5.4.5",
+    "url-loader": "^4.1.0",
     "yup": "^0.29.1"
   },
   "scripts": {

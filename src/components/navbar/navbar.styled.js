@@ -7,7 +7,7 @@ export const MainNav = styled.div`
 			background-color: #000000;
 			@media screen and (min-width: 872px) {
 				padding-top: 10px;
-				height: 80px;
+				height: 90px;
 				border-bottom: 1px solid #fff;
 				justify-content: center;
 				width: 100%;
@@ -15,7 +15,7 @@ export const MainNav = styled.div`
 				display: flex;
 			}
 			@media (min-width: 676px) and (max-width: 872px) {
-				height: 75px;
+				height: 85px;
 				display: flex;
 
 				padding-top: 10px;
@@ -23,7 +23,7 @@ export const MainNav = styled.div`
 			}
 			@media screen and (max-width: 454px) {
 				padding-top: 10px;
-				height: 70px;
+				height: 80px;
 				justify-content: center;
 				display: flex;
 
@@ -41,15 +41,27 @@ export const MainNav = styled.div`
 export const Img = styled.img`
 			display: flex;
 			@media screen and (min-width: 872px) {
-				justify-content:start;
+				justify-content: start;
 				padding: 0px 100px 0px 10px;
+			}
 
+			@media (min-width: 676px) and (max-width: 872px) {
+				width: 200px;
+				height: 33px;
+			}
+			@media (min-width: 455px) and (max-width: 675px) {
+				width: 150px;
+				height: 33px;
+			}
+			@media screen and (max-width: 454px) {
+				width: 100px;
+				height: 33px;
 			}
 		`;
 
 export const Search = styled.div`
 			display: flex;
-			height: 45px;
+			height: 55px;
 			flex-direction: row;
 			padding-bottom:5px;
 
@@ -74,28 +86,39 @@ export const Search = styled.div`
 		`;
 export const Input = styled.input`
 			display: flex;
-			height: 40px;
 			justify-content: center;
 
-			max-width: 60%;
+			max-width: 50%;
 			min-width: calc(100% - 510px);
 
 			@media screen and (min-width: 872px) {
 				justify-content: center;
+				height: 50px;
 			}
 			@media (min-width: 676px) and (max-width: 872px) {
 				justify-content: center;
+				height: 40px;
 			}
 			@media (min-width: 455px) and (max-width: 675px) {
 				justify-content: center;
+				height: 30px;
 			}
 			@media screen and (max-width: 454px) {
 				justify-content: center;
-				text-align:center;
+				text-align: center;
+				height: 30px;
 			}
 		`;
 export const Button = styled.button`
 			display: flex;
+
+			@media screen and (min-width: 872px) {
+				justify-content: center;
+				height: 50px;
+				padding-top: 5px;
+			}
+			justify-content: center;
+			text-align: center;
 
 			background-color: #d4d4aa;
 			@media screen and (max-width: 454px) {
@@ -140,16 +163,17 @@ export const Link = styled.div`
 		`;
 
 export const SubLink1 = styled.div`
-			padding: 5px;
+			padding: 2px;
 			width: 25%;
 			border-right: 3px solid #fff;
+			font-weight: bold;
 
 			color: #000000;
 
-			background-color: #ffc300;
+			background-color: #f3f3f3;
 			dispaly: flex;
 			a {
-				color: white;
+				color: brown;
 			}
 			&:hover {
 				a {
@@ -159,14 +183,15 @@ export const SubLink1 = styled.div`
 			}
 		`;
 export const SubLink2 = styled.div`
-			padding: 5px;
+			padding: 2px;
 			width: 25%;
 			border-right: 3px solid #fff;
+			font-weight: bold;
 
-			background-color: #ffc300;
+			background-color: #f3f3f3;
 			dispaly: flex;
 			a {
-				color: white;
+				color: brown;
 			}
 			&:hover {
 				a {
@@ -176,14 +201,14 @@ export const SubLink2 = styled.div`
 			}
 		`;
 export const SubLink3 = styled.div`
-			padding: 5px;
+			padding: 2px;
 			width: 25%;
 			border-right: 3px solid #fff;
-
-			background-color: #ffc300;
+font-weight:bold;
+			background-color: #f3f3f3;
 			dispaly: flex;
 			a {
-				color: white;
+				color: brown;
 			}
 			&:hover {
 				a {
@@ -193,13 +218,15 @@ export const SubLink3 = styled.div`
 			}
 		`;
 export const SubLink4 = styled.div`
-			padding: 5px;
+			padding: 2px;
 			width: 25%;
+			font-weight: bold;
 
-			background-color: #ffc300;
+			
+			background-color: #f3f3f3;
 			dispaly: flex;
 			a {
-				color: white;
+				color: brown;
 			}
 			&:hover {
 				a {
