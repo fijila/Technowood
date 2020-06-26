@@ -1,12 +1,17 @@
-import React from "react";
-import { Maindiv, Subdiv, Subdiv1, Subdiv2, Subdiv3, Subdiv4, Formdiv, Input } from "./footer.styled";
-import {useForm} from "react-hook-form";
-
-
+import React from 'react'
+import {
+  MainDiv,
+  SubDiv,
+  LinksDiv,
+  LinkItem,
+  FormDiv,
+  Input,
+} from './footer.styled'
+import { useForm } from 'react-hook-form'
+import { Container } from '../container/container'
 
 export default function Footer() {
-		
-const { register } = useForm();
+  const { register } = useForm()
   const showForm = (
     <form method="post">
       <label htmlFor="name">
@@ -38,26 +43,28 @@ const { register } = useForm();
       </label>
       <button type="submit">Send</button>
     </form>
-  );
-	return (
-		<Maindiv>
-			<Subdiv>
-				<Subdiv1>
-					<a href="./about">About Us</a>
-				</Subdiv1>
-				<Subdiv2>
-					<a href="">Trends</a>
-				</Subdiv2>
-				<Subdiv3>
-					<a href="./gallery">Gallery</a>
-				</Subdiv3>
-				<Subdiv4>
-					<a href="./contact"> Contact Us</a>
-				</Subdiv4>
-			</Subdiv>
-			<Formdiv>{showForm}</Formdiv>
-		</Maindiv>
-	);
-	
+  )
+  return (
+    <MainDiv>
+      <Container>
+        <SubDiv>
+          <LinksDiv>
+            <LinkItem>
+              <a href="./about">About Us</a>
+            </LinkItem>
+            <LinkItem>
+              <a href="">Trends</a>
+            </LinkItem>
+            <LinkItem>
+              <a href="./gallery">Gallery</a>
+            </LinkItem>
+            <LinkItem>
+              <a href="./contact"> Contact Us</a>
+            </LinkItem>
+          </LinksDiv>
+          <FormDiv>{showForm}</FormDiv>
+        </SubDiv>
+      </Container>
+    </MainDiv>
+  )
 }
-
