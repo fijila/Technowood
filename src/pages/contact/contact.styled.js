@@ -29,7 +29,7 @@ export const Titlediv = styled.div`
 			width: 400px;
 			height: 30px;
 			font-weight: bold;
-			font-size: 20px;
+			font-size: 24px;
 			text-align: center;
 			font-family: "Lucida Console", Monaco, monospace;
 		`;
@@ -42,15 +42,19 @@ export const Contactdiv = styled.div`
 			margin-right: 500px;
 
 			form {
+				background-color: #ccc;
+				padding: 10px;
+				border-radius: 10px;
 			}
 
 			input {
-				border: 1px solid red;
 				text-align: center;
+				border-radius: 10px;
+				border: none;
 
 				@media screen and (min-width: 1200px) {
 					width: 400px;
-					height: 30px;
+					height: 40px;
 					margin: 5px;
 				}
 				@media (min-width: 872px) and (max-width: 1200px) {
@@ -81,13 +85,16 @@ export const Contactdiv = styled.div`
 				text-align: center;
 				flex-wrap: no-wrap;
 				flex-direction: column;
+				text-align: center;
+				border-radius: 10px;
+				border: none;
 				@media screen and (min-width: 1200px) {
 					width: 400px;
 					height: 80px;
 					margin: 5px;
 				}
 				@media (min-width: 872px) and (max-width: 1200px) {
-					width: 300px;
+					width: 400px;
 					height: 70px;
 					margin: 3px;
 				}
@@ -109,11 +116,13 @@ export const Contactdiv = styled.div`
 				}
 			}
 			button {
-				width: 50%;
 				height: 30px;
-				text-algn: center;
+				width: 100px;
 				margin: 5px;
-				border: 1px solid red;
-				background-color: red;
+				border-radius: 10px;
+				text-align: center;
+				align-self: center;
+				border: none;
+				background-color: #ffc300;
 			}
 		`;

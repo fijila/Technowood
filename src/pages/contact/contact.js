@@ -30,7 +30,7 @@ function Contact() {
 						<label htmlFor="question">
 							<textarea ref={register} name="question" id="question" rows="3" placeholder="Say something" />
 						</label>
-						<input type="submit" />
+						<button type="submit">Send</button>
 					</form>
 				</Contactdiv>
 			</Maindiv>
