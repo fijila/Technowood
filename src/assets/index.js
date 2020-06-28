@@ -20,6 +20,10 @@ const assets = {
 		slider9: require("./images/slider9.jpg"),
 		slider10: require("./images/slider10.jpg"),
 		galleryimage: require("./images/galleryimg.jpg"),
+		bannermob1: require("./images/bannermob1.jpg"),
+		bannermob2: require("./images/bannermob2.jpg"),
+		bannermob3: require("./images/bannermob3.jpg"),
+		bannermob4: require("./images/bannermob4.jpg"),
 	},
 };
 export default assets;

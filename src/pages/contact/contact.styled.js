@@ -61,5 +61,6 @@ export const Contactdiv = styled.div`
 				border: none;
 				background-color: #222;
 				color: #fff;
+				
 			}
 		`;

@@ -1,12 +1,9 @@
 import React, {useState } from "react";
-import { Container, Box1, Box2, BannerImage, Subbanner1, Subbanner2, Subbanner3, Subbanner4 } from "./banner.styled";
+import { Box1, Box2, BannerImage, SubbannerItem } from "./banner.styled";
 import assets from "../../assets";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-
-// import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, Image } from "pure-react-carousel";
-// import "pure-react-carousel/dist/react-carousel.es.css";
+import { Container } from "../container/container";
 
 export default function Banner() {
 	  const [index, setIndex] = useState(0);
@@ -16,11 +13,8 @@ export default function Banner() {
 		};
 	return (
 		<Container>
-			<Box1>
+			<Box1 className="desktop">
 				<Carousel activeIndex={index} onSelect={handleSelect}>
-					<Carousel.Item>
-						<BannerImage src={assets.images.banner2} alt="" />
-					</Carousel.Item>
 					<Carousel.Item>
 						<BannerImage src={assets.images.banner3} alt="" />
 					</Carousel.Item>
@@ -28,27 +22,31 @@ export default function Banner() {
 						<BannerImage src={assets.images.banner1} alt="" />
 					</Carousel.Item>
 					<Carousel.Item>
-						<BannerImage src={assets.images.banner4} alt="" />
+						<BannerImage src={assets.images.banner2} alt="" />
+					</Carousel.Item>
+					<Carousel.Item>
+						<BannerImage src={assets.images.banner4}  alt="" />
 					</Carousel.Item>
 				</Carousel>
 			</Box1>
+			
 			<Box2>
-				<Subbanner1>
+				<SubbannerItem>
 					<img src={assets.images.delivery} alt="" />
 					<h6>Free Delivery</h6>
-				</Subbanner1>
-				<Subbanner2>
+				</SubbannerItem>
+				<SubbannerItem>
 					<img src={assets.images.quality} alt="" />
 					<h6>Assured Quality</h6>
-				</Subbanner2>
-				<Subbanner3>
+				</SubbannerItem>
+				<SubbannerItem>
 					<img src={assets.images.since} alt="" />
 					<h6>Since 1976</h6>
-				</Subbanner3>
-				<Subbanner4>
+				</SubbannerItem>
+				<SubbannerItem>
 					<img src={assets.images.customize} alt="" />
 					<h6>Customized Products</h6>
-				</Subbanner4>
+				</SubbannerItem>
 			</Box2>
 		</Container>
 	);

@@ -27,12 +27,12 @@ export const Img = styled.img`
 `;
 
 export const Input = styled.input`
-	height: 30px;
-	margin-right: 10px;
-	border-radius:10px;
-	text-align:center;
-	border:none;
-`;
+			height: 30px;
+			margin-right: 10px;
+			border-radius: 10px;
+			text-align: center;
+			border: none;
+		`;
 export const Button = styled.button`
 			height: 30px;
 			text-align: center;
