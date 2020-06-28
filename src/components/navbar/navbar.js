@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { MainNav,Button, Link, Search,Input, SubLink1, SubLink2, SubLink3, SubLink4,Img } from "./navbar.styled";
+import { MainNav,Button, LinkDiv,HeaderDiv,HeaderContent, Search,Input, SubLink,Img } from "./navbar.styled";
 import axios from "axios";
 import assets from "../../assets";
-
+import { Container } from "../container/container";
 
 
 export default function Navbar() {
@@ -33,46 +33,52 @@ export default function Navbar() {
 	return (
 		<div>
 			<MainNav>
-				<Search>
-					<a href="/">
-						<Img src={assets.images.logo} alt="" title="logo" />
-					</a>
-					<Input type="text" name="text" placeholder="Search here!" onChange={(e) => handleOnchange(e)} />
-					<Button onClick={(e) => handleSubmit(e)}>Search</Button>
+				<HeaderDiv>
+					<Container>
+						<HeaderContent>
+							<a href="/">
+								<Img src={assets.images.logo} alt="" title="logo" />
+							</a>
+							<Search>
+								<Input type="text" name="text" placeholder="Search here!" onChange={(e) => handleOnchange(e)} />
+								<Button onClick={(e) => handleSubmit(e)}>Search</Button>
 
-					{showSearch && (
-						<div>
-							{serachResult.map((item) => (
-								<div key={item._id}>
-									{item.name}
-									{item.age}
-								</div>
-							))}
-						</div>
-					)}
-				</Search>
-				<Link>
-					<SubLink1>
+								{showSearch && (
+									<div>
+										{serachResult.map((item) => (
+											<div key={item._id}>
+												{item.name}
+												{item.age}
+											</div>
+										))}
+									</div>
+								)}
+							</Search>
+						</HeaderContent>
+					</Container>
+				</HeaderDiv>
+				<LinkDiv>
+					<SubLink>
 						<a href="./furniture" alt="">
 							Furniture
 						</a>
-					</SubLink1>
-					<SubLink2>
+					</SubLink>
+					<SubLink>
 						<a href="./tile" alt="">
 							Tiles
 						</a>
-					</SubLink2>
-					<SubLink3>
+					</SubLink>
+					<SubLink>
 						<a href="./clock" alt="">
 							Clocks
 						</a>
-					</SubLink3>
-					<SubLink4>
+					</SubLink>
+					<SubLink>
 						<a href="./light" alt="">
 							Lights
 						</a>
-					</SubLink4>
-				</Link>
+					</SubLink>
+				</LinkDiv>
 			</MainNav>
 		</div>
 	);

@@ -18,15 +18,24 @@ function Contact() {
 				</Titlediv>
 				<Contactdiv>
 					<form onSubmit={handleSubmit(onSubmit)}>
-						<input type="text" placeholder="First name" name="First name" ref={register({ required: true, maxLength: 80 })} />
-						<input type="text" placeholder="Last name" name="Last name" ref={register({ required: true, maxLength: 100 })} />
-						<input type="text" placeholder="Email" name="Email" ref={register({ required: true, pattern: /^\S+@\S+$/i })} />
-						<input
-							type="tel"
-							placeholder="Mobile number"
-							name="Mobile number"
-							ref={register({ required: true, minLength: 6, maxLength: 12 })}
-						/>
+						<label>
+							<input type="text" placeholder="First name" name="First name" ref={register({ required: true, maxLength: 80 })} />
+						</label>
+						<label>
+							<input type="text" placeholder="Last name" name="Last name" ref={register({ required: true, maxLength: 100 })} />
+						</label>
+						<label>
+							<input type="text" placeholder="Email" name="Email" ref={register({ required: true, pattern: /^\S+@\S+$/i })} />
+						</label>
+						<label>
+							<input
+								type="tel"
+								placeholder="Mobile number"
+								name="Mobile number"
+								ref={register({ required: true, minLength: 6, maxLength: 12 })}
+							/>
+						</label>
+
 						<label htmlFor="question">
 							<textarea ref={register} name="question" id="question" rows="3" placeholder="Say something" />
 						</label>
