@@ -6,16 +6,32 @@ export const Container = styled.div`
 `;
 
 export const Box1 = styled.div`
-			margin: 0.8rem;
-			object-fit: cover;
-		`;
+	object-fit: cover;
+	justify-content: center;
+	@media screen and (max-width: 675px) {
+		display: none;
+	}
+`;
+export const BoxMob = styled.div`
+	// margin: 0.8rem;
+	object-fit: cover;
+	justify-content: center;
+	@media screen and (min-width: 676px) {
+		display: none;
+	}
+	@media screen and (max-width: 675px) {
+		display: flex;
+		object-fit: cover;
+	}
+`;
 
 export const Box2 = styled.div`
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
 	align-items: center;
-	background: #f3f3f3;
+	box-shadow: 0 2px 4px #000;
+	background-color: #f3f3f3;
 	position: overflow;
 	top: 80%;
 	border: 3px #fff solid;
@@ -49,13 +65,18 @@ export const SubbannerItem = styled.div`
 	@media screen and (max-width: 454px) {
 		border-right: none;
 		width: 100%;
-        border-bottom: 3px #fff solid;
+		border-bottom: 3px #fff solid;
 	}
 `;
 
-export const BannerImage = styled.img`
-	display: flex;
+export const BannerImageDesktop = styled.img`
 	object-fit: cover;
 	cursor: pointer;
 	aspect-ratio: 16/9;
+`;
+export const BannerImageMob = styled.img`
+	object-fit: cover;
+	cursor: pointer;
+	aspect-ratio: 16/9;
+	width: 100%;
 `;

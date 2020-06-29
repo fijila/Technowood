@@ -1,5 +1,5 @@
 import React, {useState } from "react";
-import { Box1, Box2, BannerImage, SubbannerItem } from "./banner.styled";
+import { Box1, Box2, BannerImageDesktop, BannerImageMob,BoxMob, SubbannerItem } from "./banner.styled";
 import assets from "../../assets";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,24 +12,41 @@ export default function Banner() {
 			setIndex(selectedIndex);
 		};
 	return (
-		<Container>
-			<Box1 className="desktop">
+		<>
+			<Box1>
 				<Carousel activeIndex={index} onSelect={handleSelect}>
 					<Carousel.Item>
-						<BannerImage src={assets.images.banner3} alt="" />
+						<BannerImageDesktop src={assets.images.banner3} alt="" />
 					</Carousel.Item>
 					<Carousel.Item>
-						<BannerImage src={assets.images.banner1} alt="" />
+						<BannerImageDesktop src={assets.images.banner1} alt="" />
 					</Carousel.Item>
 					<Carousel.Item>
-						<BannerImage src={assets.images.banner2} alt="" />
+						<BannerImageDesktop src={assets.images.banner2} alt="" />
 					</Carousel.Item>
 					<Carousel.Item>
-						<BannerImage src={assets.images.banner4}  alt="" />
+						<BannerImageDesktop src={assets.images.banner4} alt="" />
 					</Carousel.Item>
 				</Carousel>
 			</Box1>
-			
+			<BoxMob>
+				<Carousel activeIndex={index} onSelect={handleSelect}>
+					<Carousel.Item>
+						<BannerImageMob src={assets.images.bannermob3} alt="" />
+					</Carousel.Item>
+					<Carousel.Item>
+						<BannerImageMob src={assets.images.bannermob1} alt="" />
+					</Carousel.Item>
+					<Carousel.Item>
+						<BannerImageMob src={assets.images.bannermob2} alt="" />
+					</Carousel.Item>
+					<Carousel.Item>
+						<BannerImageMob src={assets.images.bannermob4} alt="" />
+					</Carousel.Item>
+				</Carousel>
+			</BoxMob>
+			<Container>
+
 			<Box2>
 				<SubbannerItem>
 					<img src={assets.images.delivery} alt="" />
@@ -49,5 +66,6 @@ export default function Banner() {
 				</SubbannerItem>
 			</Box2>
 		</Container>
-	);
+		</>
+	);  
 }
