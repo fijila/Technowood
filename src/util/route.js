@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-	HashRouter as Router,
+	// HashRouter,
 	Route,
 	Redirect,
 	Switch,
@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import { createHashHistory } from "history";
 
-// import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import contact from "../pages/contact/contact";
 import home from "../pages/home/home";
 import about from "../pages/aboutus/about";
@@ -29,14 +29,14 @@ export const AppRoutes = () => {
 	return (
 		<Router history={createHashHistory()}>
 			<Switch>
-				<Route exact path="/home" component={home} />
-				<Route exact path="/contact" component={contact} />
-				<Route exact path="/about" component={about} />
-				<Route exact path="/tile" component={tile} />
-				<Route exact path="/light" component={light} />
-				<Route exact path="/furniture" component={furniture} />
-				<Route exact path="/clock" component={clock} />
-				<Route exact path="/gallery" component={gallery} />
+				<Route  path="/Home" component={home} />
+				<Route path="/contact" component={contact} />
+				<Route  path="/about" component={about} />
+				<Route path="/tile" component={tile} />
+				<Route  path="/light" component={light} />
+				<Route path="/furniture" component={furniture} />
+				<Route path="/clock" component={clock} />
+				<Route path="/gallery" component={gallery} />
 
 				{/* <Route component={MessageContainer} /> */}
 				<Route exact path="/" render={() => <Redirect to="/home" />} />
