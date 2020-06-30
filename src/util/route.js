@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-	//HashRouter,
+	HashRouter as Router,
 	Route,
 	Redirect,
 	Switch,
@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import { createHashHistory } from "history";
 
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 import contact from "../pages/contact/contact";
 import home from "../pages/home/home";
 import about from "../pages/aboutus/about";
