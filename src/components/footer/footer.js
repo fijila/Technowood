@@ -1,6 +1,8 @@
 import React from "react";
-import { MainDiv, SubDiv, SubDivItem, Formdiv, Input } from "./footer.styled";
+import { MainDiv, SubDiv, SubDivItem, Formdiv} from "./footer.styled";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
+
 
 export default function Footer() {
 	const { register } = useForm();
@@ -22,16 +24,16 @@ export default function Footer() {
 		<MainDiv>
 			<SubDiv>
 				<SubDivItem>
-					<a href="./about">About Us</a>
+					<Link to="./about">About Us</Link>
 				</SubDivItem>
 				<SubDivItem>
-					<a href="">Trends</a>
+					<Link to="">Trends</Link>
 				</SubDivItem>
 				<SubDivItem>
-					<a href="./gallery">Gallery</a>
+					<Link to="./gallery">Gallery</Link>
 				</SubDivItem>
 				<SubDivItem>
-					<a href="./contact"> Contact Us</a>
+					<Link to="./contact"> Contact Us</Link>
 				</SubDivItem>
 			</SubDiv>
 			<Formdiv>{showForm}</Formdiv>

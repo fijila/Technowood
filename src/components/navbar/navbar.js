@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { MainNav,Button, LinkDiv,HeaderDiv,HeaderContent, Search,Input, SubLink,Img } from "./navbar.styled";
 import axios from "axios";
 import assets from "../../assets";
+import {Link} from "react-router-dom";
 import { Container } from "../container/container";
 
 
@@ -36,9 +37,9 @@ export default function Navbar() {
 				<HeaderDiv>
 					<Container>
 						<HeaderContent>
-							<a href="/">
-								<Img src={assets.images.logo} alt="" title="logo" />
-							</a>
+							<Link to="/">
+								<Img src={assets.images.logo} title="logo" />
+							</Link>
 							<Search>
 								<Input type="text" name="text" placeholder="Search here!" onChange={(e) => handleOnchange(e)} />
 								<Button onClick={(e) => handleSubmit(e)}>Search</Button>
@@ -59,24 +60,19 @@ export default function Navbar() {
 				</HeaderDiv>
 				<LinkDiv>
 					<SubLink>
-						<a href="./furniture" alt="">
-							Furniture
-						</a>
+						<Link to="./furniture">Furniture</Link>
 					</SubLink>
 					<SubLink>
-						<a href="./tile" alt="">
-							Tiles
-						</a>
+						<Link to="./tile">Tiles</Link>
 					</SubLink>
 					<SubLink>
-						<a href="./clock" alt="">
-							Clocks
-						</a>
+						<Link to="./clock">Clocks</Link>
 					</SubLink>
+
 					<SubLink>
-						<a href="./light" alt="">
+						<Link to="./light" alt="">
 							Lights
-						</a>
+						</Link>
 					</SubLink>
 				</LinkDiv>
 			</MainNav>

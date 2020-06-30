@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import {Maindiv, Titlediv, Sliderdiv} from './slider.styled';
 import Swiper from "react-id-swiper";
 import assets from "../../assets";
